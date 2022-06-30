@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: auto;
+
+  display: grid;
+  grid-template-areas:
+    "nav"
+    "main"
+    "footer";
+  gap: 20px;
+
+  text-align: center;
+  padding: 0 100px;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Nav */
+.nav {
+  width: 100%;
+  height: 70px;
+
+  grid-area: nav;
+  border-radius: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+
+  background-color: rgb(255, 94, 0);
+}
+
+.nav-logo {
+  width: 70px;
+}
+
+.btn-1 {
+  width: 100px;
+  height: 40px;
+
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 10px;
+
+  color: white;
+  cursor: pointer;
+  transition: 0.4s;
+  font-family: "Montserrat", sans-serif;
+}
+
+.btn-1:hover {
+  background-color: white;
+  color: black;
+}
+
+.btn-2 {
+  width: 100px;
+  height: 40px;
+
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+
+  color: black;
+  cursor: pointer;
+  transition: 0.4s;
+  font-family: "Montserrat", sans-serif;
+}
+
+.btn-2:hover {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+/* Finalzia Nav */
+
+/* Main */
+.main {
+  width: 100%;
+
+  height: auto;
+
+  grid-area: main;
+
+  display: grid;
+  grid-template-areas:
+    "section-1 section-1 article article article"
+    "section-2 section-2 article article article"
+    "img img img img img"
+    "map map map map map"
+    "form form form form form";
+  gap: 10px;
+}
+
+section,
+article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 20px;
+}
+
+/* Section 1 */
+.section-1 {
+  grid-area: section-1;
+  background-color: red;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.section-p p {
+  width: 200px;
+  text-align: justify;
+}
+
+/* Finaliza Section 1 */
+
+/* Section 2 */
+
+.section-2 {
+  grid-area: section-2;
+  background-color: rgba(255, 0, 0, 0.736);
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Finaliza Section 2 */
+
+.article {
+  grid-area: article;
+  background-color: rgba(255, 0, 0, 0.525);
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+
+  justify-content: center;
+  align-items: center;
+
+  align-content: space-evenly;
+}
+
+/* Images */
+.images {
+  width: 100%;
+  grid-area: img;
+  background-color: rgba(255, 0, 0, 0.432);
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 300px;
+  gap: 20px;
+
+  align-content: center;
+}
+
+.images img {
+  width: 100%;
+  transition: 0.4s;
+}
+.images img:hover {
+  transform: scale(1.1);
+}
+/* Finalizacion Img */
+
+/* Map */
+.map {
+  width: 100%;
+  height: 600px;
+
+  grid-area: map;
+  /* background-color: rgba(255, 0, 0, 0.225); */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 20px;
+}
+
+.info-map {
+  width: 400px;
+  height: 300px;
+
+  padding: 40px;
+  display: flex;
+
+  align-items: center;
+
+  border-radius: 20px;
+
+  background-color: rgb(223, 221, 221);
+}
+
+.info-map p {
+  width: auto;
+}
+
+.map iframe {
+  width: 50%;
+  height: 100%;
+
+  border: none;
+  border-radius: 20px;
+}
+/* Finalizacion Map */
+
+/* form */
+.form-section {
+  width: 100%;
+  height: 500px;
+  grid-area: form;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: gray; */
+}
+
+.form-container {
+  width: 60%;
+  height: 400px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* background-color: #fff; */
+  border-radius: 20px;
+
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.form-container img {
+  width: 50%;
+  height: 100%;
+}
+
+.form-container form {
+  width: 50%;
+  height: 100%;
+
+  padding: 40px;
+  background-color: rgb(214, 213, 213);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+}
+
+form input {
+  width: 200px;
+  height: 30px;
+}
+
+form button {
+  width: auto;
+  height: 30px;
+
+  border: none;
+  background-color: red;
+  color: white;
+
+  padding: 0 5px;
+  border-radius: 5px;
+}
+
+/* Finaliza Main */
+
+/* Footer */
+.footer {
+  width: 100%;
+  height: 70px;
+
+  grid-area: footer;
+  border-radius: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+
+  background-color: rgba(255, 94, 0, 0.652);
+}
+
+.footer img {
+  width: 40px;
+  height: auto;
+}
+/* Finaliza Footer */
